@@ -1,0 +1,16 @@
+<p>modal works!</p>
+<section>
+    <div class="header">
+        <span>{{Title}}</span>
+        <button (click)="closeModal('cancel')">X</button>
+    </div>
+        
+    <div class="content">
+        {{Message}}
+    </div>
+    <div class="footer">
+        <button (click)="closeModal('yes')">Yes</button>
+        <button (click)="closeModal('no')">No</button>
+    </div>
+</section>
+    

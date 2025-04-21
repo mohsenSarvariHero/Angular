@@ -1,0 +1,29 @@
+:host{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    height: 100%;
+    padding: 0rem 0.3rem 0rem 0.5rem;
+    border-bottom: 1px solid black;
+
+}
+:host.active{
+    font-weight: bold;
+    border: 1px solid black;
+    border-bottom: none;
+    background-color: lightgreen;
+}
+.close-btn{
+    width: 15px;
+    background-color: antiquewhite;
+    height: 15px;
+    padding : 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close-btn:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}

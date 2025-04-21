@@ -1,0 +1,29 @@
+<p>product works!</p>
+<p>product works!</p>
+<form (ngSubmit)="addProduct()">
+  <label for="name">Product Name: </label>
+  <input type="text" id="name" [(ngModel)]="newProduct.name" name="name" required />
+
+  <label for="quantity">Product Quantity: </label>
+  <input type="number" id="quantity" [(ngModel)]="newProduct.quantity" name="quantity" required />
+
+  <button type="submit">Add Product</button>
+</form>
+
+<h3 class="headerP">Product List</h3>
+<ul>
+  <li *ngFor="let product of products; let i = index">
+    {{ product.name }} - {{ product.quantity }}
+    <button (click)="deleteProduct(i)">❌ Delete</button>
+  </li>
+</ul>
+<!-- <form>
+    <label for="pn">Product Name: </label>
+    <input type="text" id="pn">
+
+    <label for="pp">Product Price:</label>
+    <input type="text" id="pp">
+
+    <label for="bd">Product Description: </label>
+    <textarea id="bd" cols="30" rows="20" [formControl]="inputControl"></textarea>
+</form> -->
